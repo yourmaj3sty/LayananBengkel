@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musang Montir</title>
+    <!---Fonts--->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&family=Poppins:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-logo">Musang<span>Montir</span></a>
+    </nav>
+    <h1>Pilih Layanan</h1>
+    <form action="{{ url_for('menu', kategori=kategori) }}" method="POST">
+        <label for="kategori">Kategori:</label>
+        <select name="kategori" id="kategori" onchange="this.form.submit()">
+            <option value="Rutin" {% if kategori == 'Rutin' %}selected{% endif %}>Rutin</option>
+            <option value="Sparepart" {% if kategori == 'Sparepart' %}selected{% endif %}>Sparepart</option>
+            <option value="Lengkap" {% if kategori == 'Lengkap' %}selected{% endif %}>Lengkap</option>
+        </select>
+    </form>
+
+    <form action="{{ url_for('menu', kategori=kategori) }}" method="POST">
+        <label for="servis_id">Pilih Servis:</label>
+        <select name="servis_id" id="servis_id">
+            {% for layanan in layanan %}
+                <option value="{{ layanan[0] }}">{{ layanan[1] }} - Rp{{ layanan[2] }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Pilih">
+        <a class="button-menu" href="{{ url_for('bayar') }}">Lanjut ke Pembayaran</a>
+    </form>
+</body>
+</html>

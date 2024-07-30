@@ -1,0 +1,244 @@
+/* styles.css */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fef4e4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #d45d00;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  text-shadow: 1px 3px #fff;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 900;
+  color: #fff;
+  font-size: 2rem;
+}
+
+a {
+  color: #d45d00;
+  padding-bottom: 2px;
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff3e0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #b35900;
+}
+
+input[type="text"],
+select {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  font-family: inherit;
+}
+
+input[type="submit"] {
+  background-color: #d45d00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff7f11;
+}
+
+p {
+  text-align: center;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff3e0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: "Courier New", Courier, monospace;
+}
+
+.flash-messages {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  color: white;
+  background-color: #d45d00;
+  border-radius: 5px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.flash-messages.error {
+  background-color: #ff4b4b;
+}
+
+.flash-messages.success {
+  background-color: #4caf50;
+}
+
+a.button {
+  display: inline-block;
+  margin: 5px;
+  padding: 15px 30px;
+  background-color: #d45d00;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+a.button-data {
+  background-color: #d45d00;
+  color: white;
+  border: none;
+  padding: 8.2px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-left: 150clearpx;
+}
+
+a.button-menu {
+  background-color: #d45d00;
+  color: white;
+  border: none;
+  padding: 8.2px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-left: 225px;
+}
+
+a.button-bayar {
+  background-color: #d45d00;
+  color: white;
+  border: none;
+  padding: 8.2px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-left: 660px;
+}
+
+a.button:hover {
+  background-color: #ff7f11;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ff7f3e;
+  color: #fff6e9;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: 900;
+  color: #312331;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.navbar-logo span {
+  color: #fff6e9;
+}
+
+/* Hero Section styles */
+.hero {
+  background: url("/static/hero1.jpg") no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  background-size: 150%;
+  min-height: 600px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Menu Section styles */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.row .menu-card {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.row .menu-card img {
+  border-radius: 50%;
+  width: 50%;
+  border: 5px solid #fff;
+}
+
+.row .menu-card .menu-card-title {
+  margin-top: 2rem;
+  font-size: 1rem;
+  color: #dac0a3;
+  font-weight: 900;
+}
+
+.row .menu-card .menu-card-fil {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--primary);
+  font-weight: 400;
+  font-style: italic;
+}
+
+.row .menu-card .menu-card-price {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}

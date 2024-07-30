@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musang Montir</title>
+    <!---Fonts--->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&family=Poppins:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-logo">Musang<span>Montir</span></a>
+    </nav>
+
+    <section class="hero" id="hero">
+      <main class="content">
+        <h1>Selamat Datang di Musang Montir</h1>
+        <p>
+          Kami akan melayani anda dengan sepenuh hati dan tenaga. Motor sehat
+          kamipun senang, anda balik lagi...
+        </p>
+      </main>
+      
+      <a class="button" href="{{ url_for('data_pelanggan') }}"
+        >Isi Data Pelanggan</a
+      >
+  </body>
+
+  <section>
+  <h2>Layanan apa saja yang ada di Musang Montir?</h2>
+  <div class="row">
+  <div class="menu-card">
+    <img src="/static/rutin.jpg" alt="rutin" class="menu-card-img" />
+    <h3 class="menu-card-title">Service Rutin</h3>
+    <p class="menu-card-fil">Ganti oli dan Kanvas Rem</p>
+  </div>
+  <div class="menu-card">
+    <img
+      src="/static/sparepart.jpg"
+      alt="sparepart"
+      class="menu-card-img"
+    />
+    <h3 class="menu-card-title">Service Sparepart</h3>
+    <p class="menu-card-fil">Ganti Ban dan Rantai</p>
+  </div>
+  <div class="menu-card">
+    <img
+      src="/static/lengkap.jpg"
+      alt="lengkap"
+      class="menu-card-img"
+    />
+    <h3 class="menu-card-title">Service Lengkap</h3>
+    <p class="menu-card-fil">Service Keseluruhan</p>
+  </div>
+  </div>
+</section>
+</section>
+</body>
+</html>

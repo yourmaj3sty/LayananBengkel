@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musang Montir</title>
+    <!---Fonts--->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,300;0,400;0,700;0,900;1,700;1,900&family=Poppins:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a class="navbar-logo">Musang<span>Montir</span></a>
+    </nav>
+
+    <h1>Isi Data Pelanggan</h1>
+    <form action="{{ url_for('data_pelanggan') }}" method="POST">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required /><br />
+      <label for="merk_motor">Merk Motor:</label>
+      <input type="text" id="merk_motor" name="merk_motor" required /><br />
+      <label for="jenis_motor">Jenis Motor:</label>
+      <input type="text" id="jenis_motor" name="jenis_motor" required /><br />
+      <label for="tahun_motor">Tahun Motor:</label>
+      <input type="text" id="tahun_motor" name="tahun_motor" required /><br />
+      <input type="submit" value="Simpan" />
+      <a class="button-data" href="{{ url_for('index') }}"
+        >Kembali ke Halaman Utama</a
+      >
+    </form>
+  </body>
+</html>
